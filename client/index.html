@@ -17,12 +17,15 @@
 <body>
     <main class="container">
         <h1 class="mt-3">Chirp, chirp</h1>
-        <form action="/contact-form">
-          <input class="form-input userInput" type="text" name="user" placeholder="user" />
-          <input class="form-input textInput" type="text" name="text" placeholder="text" />
-          <input class="btn btn-primary"  id="callAPI" type="button" value="Call API" />
-        </form>
-        <div class="chirpsBox"></div>
+        <div class="row justify-content-start">
+          <form class="col-lg-3"action="/contact-form">
+            <input class="form-input userInput" type="text" name="user" placeholder="user" />
+            <input class="form-input textInput" type="text" name="text" placeholder="text" />
+            <input class="btn btn-primary"  id="callAPI" type="button" value="Call API" />
+          </form>
+          </div>
+          <div class="chirpsBox row d-flex justify-content-end m-5"></div>
+        </div>
       </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
